@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CambiaPin">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CAMBIAR PIN DE ACCESO"
+        android:gravity="center_horizontal"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"/>
+
+    <TextView
+        android:id="@+id/cp_nomUsuario"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="NOMBRE USUARIO"
+        android:gravity="center_horizontal"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="50dp"
+        android:layout_marginRight="50dp">
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Pin Actual"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/cp_PinActual"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Nuevo Pin"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/cp_PinNuevo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="8"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Reescriba Nuevo Pin"
+            android:layout_marginTop="10dp"/>
+
+        <EditText
+            android:id="@+id/cp_PinNuevo2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:inputType="numberPassword"
+            android:maxLength="8"/>
+
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/cp_btnCambiar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cambiar"
+        android:layout_marginTop="20dp"
+        android:onClick="cp_btnCambiar"/>
+
+
+</LinearLayout>

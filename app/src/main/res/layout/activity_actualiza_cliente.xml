@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="5dp"
+    android:layout_marginRight="5dp"
+    android:orientation="vertical"
+    tools:context=".ActualizaCliente">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="ACTUALIZACION DE CLIENTES"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/ac_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/ac_btnNuevo"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:onClick="ac_btnNuevo"
+            android:text="Nuevo" />
+
+        <Button
+            android:id="@+id/ac_btnBuscarCliente"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:onClick="ac_btnBuscarCliente"
+            android:text="Buscar cliente" />
+
+
+    </LinearLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:isScrollContainer="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre del Negocio" />
+
+            <EditText
+                android:id="@+id/ac_edNomNegocio"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:inputType="textCapCharacters"
+                android:maxLength="50" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Nombre a facturar" />
+
+            <EditText
+                android:id="@+id/ac_edNomFactura"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLength="50" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="100dp"
+                    android:text="ID Tributaria" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipo ID Tributaria" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ac_edIdTributa"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="15" />
+
+                <Spinner
+                    android:id="@+id/ac_spTipoId"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp" />
+
+
+            </LinearLayout>
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email" />
+
+            <EditText
+                android:id="@+id/ac_email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textEmailAddress" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contacto" />
+
+            <EditText
+                android:id="@+id/ac_nomContacto"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textCapWords"
+                android:maxLength="50" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Dirección" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!--TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Provincia" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="Canton" />
+
+                <TextView
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:text="Distrito"
+                    android:layout_marginLeft="5dp"/-->
+
+
+                <EditText
+                    android:id="@+id/ac_Provincia"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Provincia"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/ac_Canton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Canton"
+                    android:inputType="textCapWords" />
+
+                <EditText
+                    android:id="@+id/ac_Distrito"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/ac_distrito"
+                    android:inputType="textCapWords" />
+
+            </LinearLayout>
+
+            <!--LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginBottom="5dp">
+
+                <Spinner
+                    android:id="@+id/ac_spProvincia"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:id="@+id/ac_spCanton"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+                <Spinner
+                    android:id="@+id/ac_spDistrito"
+                    android:layout_width="120dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp" />
+
+
+            </LinearLayout-->
+
+
+            <EditText
+                android:id="@+id/ac_referencia"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="text"
+                android:maxLength="200" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Geo-Localización" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ac_tvLatitud"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:enabled="false" />
+
+                <EditText
+                    android:id="@+id/ac_tvLongitud"
+                    android:layout_width="110dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:enabled="false" />
+
+                <ImageButton
+                    android:id="@+id/ac_btnUbicacion"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:onClick="ac_onClickUbicacion"
+                    android:src="@drawable/ic_place_black_24dp" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Telefonos" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ac_edTelNeg"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Negocio"
+                    android:inputType="phone"
+                    android:maxLength="8" />
+
+                <EditText
+                    android:id="@+id/ac_edTelCon"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Contacto"
+                    android:inputType="phone"
+                    android:maxLength="8" />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Share" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="30dp"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ac_Kolbi"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:hint="Kolbi"
+                    android:inputType="number" />
+
+                <EditText
+                    android:id="@+id/ac_Movistar"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="20dp"
+                    android:hint="Movistar"
+                    android:inputType="number" />
+
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ac_btnGuardar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:text="Guardar" />
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

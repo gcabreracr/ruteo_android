@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    tools:context=".AnulaFactura">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ANULACION FACTURA"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Numero de factura"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <EditText
+            android:id="@+id/txtNumFacNula"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:inputType="number" />
+
+        <ImageButton
+            android:layout_width="35dp"
+            android:layout_height="45dp"
+            android:layout_marginStart="20dp"
+            app:srcCompat="@android:drawable/checkbox_off_background"
+            tools:src="@android:drawable/ic_menu_search" />
+
+    </LinearLayout>
+    <!--LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"-->
+
+        <TextView
+            android:id="@+id/tvIdFacNula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ID:"/>
+        <TextView
+            android:id="@+id/tvCliFacNula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente:"/>
+        <TextView
+            android:id="@+id/tvNegFacNula"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Negocio:"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Item                                   Cantidad     Monto"
+            android:textSize="15dp" />
+
+        <ListView
+            android:id="@+id/lvIteFacNula"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@android:color/darker_gray" />
+
+        <TextView
+            android:id="@+id/tvSubFacNula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Subtotal:  9999,999" />
+
+        <TextView
+            android:id="@+id/tvDesFacNula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Descuento:  9999,999" />
+
+        <TextView
+            android:id="@+id/tvImpFacNula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Impuesto:  9999,999" />
+
+        <TextView
+            android:id="@+id/tvTotFacNula"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="Total:  9999,999" />
+        <Button
+            android:id="@+id/btnAnularFac"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Anular"/>
+
+
+
+    <!--/LinearLayout-->
+
+</LinearLayout>

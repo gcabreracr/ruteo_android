@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="motivonoventa">
+        <item>Tiene Inventario</item>
+        <item>NO esta encargado</item>
+        <item>Negocio Cerrado</item>
+        <item>Cliente Sin Dinero</item>
+        <item>Sin Stock para Ventas</item>
+    </string-array>
+</resources>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="tipoid">
+        <item>1-Fisica</item>
+        <item>2-Juridica</item>
+        <item>3-DIMEX</item>
+        <item>4-NITE</item>
+    </string-array>
+
+
+
+</resources>

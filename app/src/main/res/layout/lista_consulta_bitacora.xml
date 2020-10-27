@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/lcb_nomcli"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nombre del negocio"
+        android:textSize="18dp"
+        android:textStyle="bold" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/lcb_horabit"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content"
+            android:text="hh:mm:ss"/>
+
+        <TextView
+            android:layout_marginLeft="20dp"
+            android:id="@+id/lcb_monCompra"
+            android:layout_width="230dp"
+            android:layout_height="wrap_content"
+            android:text="Monto Compra: ######,###.00"/>
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/lcb_motNOcompra"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tiene inventario"/>
+
+
+    <View
+        android:id="@+id/divider2"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="?android:attr/listDivider" />
+
+</LinearLayout>

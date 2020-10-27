@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <!--group android:checkableBehavior="single"-->
+    <item
+        android:id="@+id/nav_clientes"
+        android:icon="@drawable/ic_person_black_24dp"
+        android:title="@string/nav_act_clientes" />
+
+    <item android:title="Facturacion">
+
+        <menu>
+
+            <item
+                android:id="@+id/nav_emiteFac"
+                android:title="@string/nav_emision_fac" />
+
+            <item
+                android:id="@+id/nav_reimprimeFac"
+                android:icon="@android:drawable/ic_menu_report_image"
+                android:title="Reimpresion de factura" />
+
+        </menu>
+    </item>
+
+    <item
+        android:id="@+id/nav_bitacora"
+        android:icon="@android:drawable/ic_menu_save"
+        android:title="Bitacora de Visita" />
+
+    <item android:title="Liquidacion Diaria">
+        <menu>
+
+            <item
+                android:id="@+id/nav_statusLiq"
+                android:icon="@android:drawable/ic_menu_save"
+                android:title="Status Liquidación Diaria" />
+
+        </menu>
+    </item>
+
+
+    <item
+        android:id="@+id/nav_ConVisita"
+        android:title="Consulta Visita x Dia" />
+
+    <item
+        android:id="@+id/nav_ConBitacora"
+        android:title="Consulta Bitacora" />
+
+
+</menu>

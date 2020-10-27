@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name">Facturacion y Control PDVs</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Menu Principal</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_login">Login / Usuario</string>
+    <string name="ip">http://seccab.com/sandbox/rvcr</string>
+    <string name="ip2">http://192.168.0.14/ruteo</string>
+    <string name="ac_distrito">Distrito</string>
+    <string name="nav_act_clientes">Actualizar Clientes</string>
+    <string name="nav_emision_fac">Emision de factura</string>
+    <string name="none_paired">No hay dispositvos disponibles</string>
+    <string name="scanning">Buscando...</string>
+    <string name="none_found">NO encontrado</string>
+    <string name="select_device">Seleccione dispositivo</string>
+    <string name="not_connected">NO conectado</string>
+    <string name="bt_not_enabled_leaving">Impresora NO disponible</string>
+    <string name="title_paired_devices">Dispositivos configurados</string>
+</resources>

@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="8dp"
+    android:layout_marginRight="8dp"
+    android:orientation="vertical"
+    tools:context=".Bitacora">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="BITACORA DE VISITA"
+        android:textAlignment="center"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <ProgressBar
+        android:id="@+id/bit_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone"/>
+
+    <Button
+        android:id="@+id/bit_btnBuscaCliente"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="bit_btnBuscaCliente"
+        android:text="Clientes" />
+
+
+    <TextView
+        android:id="@+id/bit_tvNomNegocio"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Nombre del negocio"
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginBottom="10dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Compra efectuada:"
+            android:textSize="18dp" />
+
+        <TextView
+            android:id="@+id/bit_tvCompra"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:textAlignment="textEnd"
+            android:text="#####,###.00"
+
+            android:textSize="20dp" />
+
+    </LinearLayout>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Motivo NO compra"
+            android:textSize="18dp" />
+
+        <Spinner
+            android:id="@+id/bit_spNoCompra"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="40dp"
+            android:textAlignment="textEnd"/>
+
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Observaciones" />
+
+    <EditText
+        android:id="@+id/bit_tvNotaBita"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:gravity="top|left" />
+
+    <Button
+        android:id="@+id/bit_btnGuardar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Guardar"
+        android:onClick="bit_btnGuardar"/>
+
+
+</LinearLayout>

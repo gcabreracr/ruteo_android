@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.seccab.ejecucinruteo">
+
+    <uses-permission android:name="android.permission.BLUETOOTH" />
+    <uses-permission android:name="android.permission.BLUETOOTH_ADMIN" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.CALL_PHONE"/>
+    <uses-permission android:name="android.permission.READ_CONTACTS"/>
+    <uses-permission-sdk-23 android:name="android.permission.ACCESS_FINE_LOCATION"/>
+
+
+    <uses-feature android:name="android.hardware.location.gps" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name=".SplashActivity">
+            <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+
+            <category android:name="android.intent.category.LAUNCHER" />
+        </intent-filter>
+        </activity>
+
+        <activity android:name=".ImprimeFactura" />
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:screenOrientation="fullSensor"
+            android:theme="@style/AppTheme.NoActionBar">
+
+        </activity>
+        <activity
+            android:name=".LoginUsuario"
+            android:parentActivityName=".MainActivity"
+            android:screenOrientation="fullSensor">
+
+            <!-- The meta-data tag is required if you support API level 15 and lower -->
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".MainActivity" />
+        </activity>
+        <activity
+            android:name=".ActualizaCliente"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".RecibeCarga"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateUnchanged|adjustResize|stateHidden" />
+        <activity
+            android:name=".EmiteFactura"
+            android:configChanges="screenSize"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize|stateUnchanged" />
+        <activity
+            android:name=".StatuLiquida"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name=".AnulaFactura"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="adjustResize|stateHidden" />
+        <activity
+            android:name=".Bitacora"
+            android:configChanges="screenSize"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize|stateUnchanged" />
+        <activity
+            android:name=".ReimprimeFac"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name=".SeleccionaCliente"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateUnchanged|adjustResize" />
+        <activity
+            android:name=".AgregaItem"
+            android:screenOrientation="fullSensor"
+            android:windowSoftInputMode="stateHidden|adjustResize" />
+        <activity android:name=".CondicionesFactura" />
+        <activity android:name=".printer_bt.DeviceListActivity" />
+        <activity android:name=".ListadoFacturas" />
+        <activity android:name=".CambiaPin" />
+        <activity android:name=".CambiaPDV" />
+        <activity android:name=".ConsultaVisitaDiaria" />
+        <activity android:name=".ConsultaBitacoraDiaria" />
+    </application>
+
+</manifest>

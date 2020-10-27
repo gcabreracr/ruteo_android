@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginLeft="2dp"
+    android:layout_marginRight="2dp"
+    android:orientation="vertical"
+    tools:context=".AgregaItem">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center_horizontal"
+        android:text="LISTA DE ARTICULOS"
+        android:textSize="20dp" />
+
+
+    <ProgressBar
+        android:id="@+id/ai_progressBar"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <android.support.v7.widget.RecyclerView
+                android:id="@+id/ai_RecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="270dp" />
+
+            <View
+                android:id="@+id/divider6"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="?android:attr/listDivider" />
+
+            <TextView
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Articulo seleccionado"
+                android:gravity="center_horizontal"
+                android:background="@android:color/darker_gray"
+                android:textSize="18dp" />
+
+            <TextView
+                android:id="@+id/ai_nomItem"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18dp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Cantidad "
+                    android:textSize="18dp" />
+
+                <EditText
+                    android:id="@+id/ai_edCantidad"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+
+                    android:maxLength="8" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Monto "
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/ai_tvSubTotal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="#####,###.00"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/ai_edPorDescto"
+                    android:layout_width="50dp"
+                    android:layout_height="wrap_content"
+                    android:inputType="number"
+                    android:maxLength="2"
+                    android:textAlignment="center" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text=" % Descuento"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/ai_tvDescto"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="#####,###.00"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/ai_tvPorImpto"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="13%"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Impuesto"
+                    android:textSize="18dp" />
+
+                <TextView
+                    android:id="@+id/ai_tvImpto"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="#####,###.00"
+                    android:textAlignment="textEnd"
+                    android:textSize="18dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="8dp"
+                    android:text="Total"
+                    android:textSize="20dp" />
+
+                <TextView
+                    android:id="@+id/ai_tvTotal"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:text="#####,###.00"
+                    android:textAlignment="textEnd"
+                    android:textSize="20dp" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_horizontal">
+
+                <Button
+                    android:id="@+id/ai_btnCancelar"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="20dp"
+
+                    android:text="Cancelar" />
+
+
+                <Button
+                    android:id="@+id/ai_btnAgregar"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@android:drawable/ic_menu_save"
+                    android:text="Guardar" />
+
+
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</LinearLayout>

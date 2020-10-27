@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginLeft="4dp"
+    android:layout_marginRight="4dp"
+    tools:context=".CondicionesFactura">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CONDICIONES DE FACTURA"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:textAlignment="center"
+        android:layout_marginBottom="20dp"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de comprobante"/>
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="20dp">
+
+        <RadioButton
+            android:id="@+id/cf_rdFE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Factura Electrónica"
+            android:checked="true"
+            android:onClick="cf_rbFE"/>
+
+        <RadioButton
+            android:id="@+id/cf_rbTE"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tiquete Electrónico"
+            android:onClick="cf_rbTE"/>
+
+    </RadioGroup>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tipo de factura"/>
+
+        <RadioGroup
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginLeft="20dp">
+
+            <RadioButton
+                android:id="@+id/cf_rdContado"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Contado"
+                android:checked="true"
+                android:onClick="cf_rbContado"/>
+
+            <RadioButton
+                android:id="@+id/cf_rbCredito"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Crédito"
+                android:onClick="cf_rbCredito"/>
+
+        </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Plazo"
+            android:textSize="15dp"/>
+
+        <EditText
+            android:id="@+id/cf_etPlazo"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="2"
+            android:textAlignment="center" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="días"
+            android:textSize="15dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center">
+
+        <Button
+            android:id="@+id/cf_btnGuardar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Guardar"
+            android:onClick="cf_btnGuardar"/>
+
+        <Button
+            android:id="@+id/cf_btnCancelar"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:text="Cancelar"
+            android:onClick="cf_btnCancelar"/>
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
